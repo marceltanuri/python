@@ -14,7 +14,7 @@ def printPositions3():
 
 # Validates params existence
 if len(sys.argv) < 5:
-    print("Missing params. You should enter 3 numeric digits")
+    print("Missing params. You should enter your password and 3 numeric digits for positions")
 else:
     printPositions3()
     
