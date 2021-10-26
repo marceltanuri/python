@@ -14,7 +14,7 @@ medicalExam_gestationWeeks = sys.argv[2]
 
 readyToBorn = 38 #weeks
 maxTimeToBorn = 42 #weeks
-threshold = (maxTimeToBorn - readyToBorn) #weeks
+threshold = (maxTimeToBorn - readyToBorn) + 1 #weeks
 
 ramainingWeeks = readyToBorn - int(medicalExam_gestationWeeks)
 
