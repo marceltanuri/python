@@ -13,7 +13,8 @@ medicalExam_examDate = datetime.datetime.strptime(sys.argv[1], "%d/%m/%Y")
 medicalExam_gestationWeeks = sys.argv[2]
 
 readyToBorn = 38 #weeks
-threshold = 5 #weeks
+maxTimeToBorn = 42 #weeks
+threshold = (maxTimeToBorn - readyToBorn) #weeks
 
 ramainingWeeks = readyToBorn - int(medicalExam_gestationWeeks)
 
