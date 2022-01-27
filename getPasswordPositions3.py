@@ -7,13 +7,14 @@ import sys
 #   Password positions
 def printPositions3():
     password = sys.argv[1]
-    x = int(sys.argv[2]) - 1
-    y = int(sys.argv[3]) - 1
-    z = int(sys.argv[4]) - 1
+    
+    x = int(sys.argv[2][0]) - 1
+    y = int(sys.argv[2][1]) - 1
+    z = int(sys.argv[2][2]) - 1
     print("Your code: ", "\n"+password[x], password[y], password[z])
 
 # Validates params existence
-if len(sys.argv) < 5:
+if len(sys.argv) < 3:
     print("Missing params. You should enter your password and 3 numeric digits for positions")
 else:
     printPositions3()
